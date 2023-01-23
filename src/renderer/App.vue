@@ -83,4 +83,14 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* //////////////////////////////////////////////////// */
+#app {
+  height: 100vh;
+  width: 100%;
+}
+body {
+  background-color: #333;
+  overflow: hidden;
+}
 </style>
