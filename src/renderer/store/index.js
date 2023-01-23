@@ -8,9 +8,5 @@ export const useDataStore = defineStore("data", {
     amperage: 10,
   }),
 
-  actions: {
-    increment() {
-      this.imu.roll = 50;
-    },
-  },
+  actions: {},
 });

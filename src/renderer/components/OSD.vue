@@ -1,9 +1,9 @@
 <template>
   <div class="OSD">
-    <p class="OSD__depth">{{ voltageOverall }} m</p>
+    <p class="OSD__depth">{{ depth }} m</p>
     <div class="batStats">
-      <p class="OSD__voltage">{{ voltageOverall }} V</p>
-      <p class="OSD__voltage">{{ voltageCell }} V</p>
+      <p class="OSD__voltage">{{ voltage.overall }} V</p>
+      <p class="OSD__voltage">{{ voltage.cell }} V</p>
       <p class="OSD__amperage">{{ amperage }} A</p>
     </div>
 
@@ -38,9 +38,8 @@ const dataStore = useDataStore();
 let imu = dataStore.imu;
 
 let depth = dataStore.depth;
-let voltageOverall = dataStore.voltage.overall;
-let voltageCell = dataStore.voltage.cell;
-let amperage = dataStore.imu.roll;
+let voltage = dataStore.voltage;
+let amperage = dataStore.amperage;
 
 // onMounted(() => {
 //   setInterval(() => {
